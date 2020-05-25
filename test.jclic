@@ -1,0 +1,1143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="test" version="0.1.3">
+ <settings>
+  <title>test</title>
+  <revision description="created" date="5/15/20" />
+  <author name="Tech Department" />
+  <organization name="Summer Street" />
+  <descriptors />
+  <meta_langs>en</meta_langs>
+  <descriptions>
+   <description language="en" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="Welcome" />
+  <item name="WHMIS Word Search" />
+  <item name="WHMIS Fill in blanks" />
+  <item name="WHMIS Symbols" />
+  <item name="Efficient Cleaning - The Bathroom" />
+  <item name="Efficient Cleaning - The Kitchen" />
+  <item name="When to do Household Chores" />
+  <item name="Wash Care Symbols" />
+  <item name="Canadian Food of Guide Quiz" />
+  <item name="Cooking Terms" />
+ </sequence>
+ <activities>
+  <activity class="@text.FillInBlanks" name="Canadian Food of Guide Quiz" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Please pick the right answer</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <counters time="false" actions="false" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true">
+     <size width="800" height="999" />
+    </window>
+    <eventSounds enabled="false" />
+    <skin file="@blue.xml" />
+   </settings>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" size="11" bold="false" italic="false" tabWidth="12" />
+    <section>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">The new Canadian Food Guide recommends avoiding trans fats in the diet. Trans fats are:  </text>
+      <target>Answer</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">Purchasing whole wheat bread is a guarantee that the bread is made from whole grain fibre. </text>
+      <target>Answer</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">The amount of fibre grams adults should consume daily is: </text>
+      <target>Answer</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">A body mass index (BMI) of 25 or higher is a healthy range for men and women. </text>
+      <target>Answer</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">Lycopene is: </text>
+      <target>Answer</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">The omega-3 fat source found in omega-3 eggs is usually derived from; </text>
+      <target>Answer</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">One of the best ways to boost immune system function is to add a little garlic to your recipes. </text>
+      <target>Answer</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">When purchasing a whey protein powder, powders that contain higher amounts of protein include: </text>
+      <target>
+       <answer>Polyunsaturated fats</answer>
+       <optionList>
+        <option>Monounsaturated fats</option>
+        <option>Polyunsaturated fats</option>
+        <option>Saturated fats</option>
+        <option>Trans fatty acids</option>
+       </optionList>
+       <text>Answer</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">Omega-3 fats are: </text>
+      <target>Answer</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">HDL is the "good" cholesterol and necessary for optimal health. </text>
+      <target>Answer</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="Cooking Terms" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Please pick the right answer</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <counters time="false" actions="false" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true">
+     <size width="600" height="999" />
+    </window>
+    <eventSounds enabled="false" />
+    <skin file="@blue.xml" />
+   </settings>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" size="11" bold="false" italic="false" tabWidth="12" />
+    <section>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14" bold="false">To soak in a seasoned liquid, to add flavor and/or tenderize. </text>
+      <target>
+       <answer>marinate</answer>
+       <optionList>
+        <option>bread</option>
+        <option>flute</option>
+        <option>marinate</option>
+        <option>sift</option>
+       </optionList>
+       <text>Answer</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14" bold="false">To cook in hot fat. </text>
+      <target>
+       <answer>pan-fry</answer>
+       <optionList>
+        <option>pan-fry</option>
+        <option>fry</option>
+        <option>stir-fry</option>
+        <option>deep-fat fry</option>
+       </optionList>
+       <text>Answer</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14" bold="false">To cover with boiling water and let stand without additional heating until flavor and color are</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14" bold="false">extracted, as for tea. </text>
+      <target>
+       <answer>steep</answer>
+       <optionList>
+        <option>steep</option>
+        <option>steam</option>
+        <option>simmer</option>
+        <option>saute</option>
+       </optionList>
+       <text>Answer</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14" bold="false">To cook by dry heat, uncovered, usually in the oven. </text>
+      <target>
+       <answer>roast</answer>
+       <optionList>
+        <option>broil</option>
+        <option>saute</option>
+        <option>roast</option>
+        <option>stew</option>
+       </optionList>
+       <text>Answer</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14" bold="false">To spread a liquid coating on a food, using a pastry brush or paper towel. </text>
+      <target>
+       <answer>brush</answer>
+       <optionList>
+        <option>flute</option>
+        <option>grease</option>
+        <option>bread</option>
+        <option>brush</option>
+       </optionList>
+       <text>Answer</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14" bold="false">To place small particles of a solid, such as butter, on the surface of a food. </text>
+      <target>
+       <answer>dot</answer>
+       <optionList>
+        <option>dot</option>
+        <option>saute</option>
+        <option>simmer</option>
+        <option>barbecue</option>
+       </optionList>
+       <text>Answer</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14" bold="false">To cook in an oven or oven-type appliance in a covered or uncovered pan. </text>
+      <target>
+       <answer>bake</answer>
+       <optionList>
+        <option>bake</option>
+        <option>roast</option>
+        <option>braise</option>
+        <option>stew</option>
+       </optionList>
+       <text>Answer</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14" bold="false">To cut food into flat pieces. </text>
+      <target>
+       <answer>slice</answer>
+       <optionList>
+        <option>chop</option>
+        <option>slice</option>
+        <option>sliver</option>
+        <option>cut</option>
+       </optionList>
+       <text>Answer</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14" bold="false">To brown by direct heat in a toaster or in the oven. </text>
+      <target>
+       <answer>toast</answer>
+       <optionList>
+        <option>brown</option>
+        <option>fry</option>
+        <option>scald</option>
+        <option>toast</option>
+       </optionList>
+       <text>Answer</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14" bold="false">To cook meat with dry and moist heat. </text>
+      <target>
+       <answer>braising</answer>
+       <optionList>
+        <option>braising</option>
+        <option>sauteing</option>
+        <option>simmering</option>
+        <option>convectioning</option>
+       </optionList>
+       <text>Answer</text>
+      </target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="Efficient Cleaning - The Bathroom" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Please type the answer</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <counters time="false" actions="false" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="false">
+     <position x="300" y="0" />
+     <size width="600" height="600" />
+    </window>
+    <eventSounds enabled="false" />
+    <skin file="@blue.xml" />
+   </settings>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" size="11" bold="false" italic="false" tabWidth="12" />
+    <section>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">Start cleaning the bathroom by </text>
+      <target>removing</target>
+      <text family="Arial" background="0xFFFFFF" size="14"> all items that don’t belong in the room. Also take out any movable </text>
+      <target>furniture</target>
+      <text family="Arial" background="0xFFFFFF" size="14"> so that you can clean the whole floor area.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">Pour a </text>
+      <target>disinfectant</target>
+      <text family="Arial" background="0xFFFFFF" size="14"> cleaner, such as bleach, into the toilet bowl. Put the toilet </text>
+      <target>brush</target>
+      <text family="Arial" background="0xFFFFFF" size="14"> in the bowl, this will sanitize it. Allow the cleaner to soak for </text>
+      <target>30</target>
+      <text family="Arial" background="0xFFFFFF" size="14"> minutes before scrubbing.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">Dust the whole room starting at the </text>
+      <target>
+       <answer>bottom</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>top</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF" size="14"> and working to the </text>
+      <target>bottom</target>
+      <text family="Arial" background="0xFFFFFF" size="14">. Dust any dirt onto the </text>
+      <target>floor</target>
+      <text family="Arial" background="0xFFFFFF" size="14">, to </text>
+      <target>sweep</target>
+      <text family="Arial" background="0xFFFFFF" size="14"> up later.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">Apply a </text>
+      <target>scrub</target>
+      <text family="Arial" background="0xFFFFFF" size="14"> cleanser to dirty areas, especially those with a build-up of grime such as the sink, </text>
+      <target>bathtub</target>
+      <text family="Arial" background="0xFFFFFF" size="14"> or around faucets. Let the cleanser soak for 10-15 </text>
+      <target>minutes</target>
+      <text family="Arial" background="0xFFFFFF" size="14"> before cleaning.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">Clean the </text>
+      <target>walls</target>
+      <text family="Arial" background="0xFFFFFF" size="14"> and ceiling with an all-purpose </text>
+      <target>cleaner</target>
+      <text family="Arial" background="0xFFFFFF" size="14">.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">If there is mold on the ceiling, spray the </text>
+      <target>area</target>
+      <text family="Arial" background="0xFFFFFF" size="14"> with a water/bleach disinfectant </text>
+      <target>solution</target>
+      <text family="Arial" background="0xFFFFFF" size="14"> and let it rest for a couple of minutes before wiping the area down. Open all </text>
+      <target>windows</target>
+      <text family="Arial" background="0xFFFFFF" size="14"> and doors to ensure a well </text>
+      <target>ventilated</target>
+      <text family="Arial" background="0xFFFFFF" size="14"> room.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">Use an all-purpose cleaner on tile unless you live in a hard water area and need a specific cleanser that will eliminate </text>
+      <target>calcium</target>
+      <text family="Arial" background="0xFFFFFF" size="14">, rust, or </text>
+      <target>lime</target>
+      <text family="Arial" background="0xFFFFFF" size="14">.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">Do not use abrasive </text>
+      <target>cleaners</target>
+      <text family="Arial" background="0xFFFFFF" size="14"> or </text>
+      <target>steel</target>
+      <text family="Arial" background="0xFFFFFF" size="14"> wool pads on porcelain fixtures, as they will quickly dull the finish.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">If the shower head becomes clogged, soak it </text>
+      <target>overnight</target>
+      <text family="Arial" background="0xFFFFFF" size="14"> in a water and </text>
+      <target>vinegar</target>
+      <text family="Arial" background="0xFFFFFF" size="14"> mixture, and then clean with a toothbrush.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">Use a flat weave microfiber cloth to clean the mirror. Remove </text>
+      <target>
+       <answer>cotton</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>dirty</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF" size="14"> spots with a </text>
+      <target>cotton</target>
+      <text family="Arial" background="0xFFFFFF" size="14"> pad and rubbing</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">alcohol and then spray the whole mirror using a water vinegar solution.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">11. Using a disinfectant cleaner and cloth or sponge, clean all toilet surfaces starting at the flush handle. This</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">includes the underside and base, as well as hinges and their mounting area.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">12. Sweep and then mop the floor beginning at the farthest point from the door or entrance. Rinse the floor</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">with clean water to remove slippery soap residue.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="Efficient Cleaning - The Kitchen" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Please type the answer</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <counters time="false" actions="false" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="false">
+     <position x="302" y="1" />
+     <size width="600" height="800" />
+    </window>
+    <eventSounds enabled="false" />
+    <skin file="@blue.xml" />
+   </settings>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" size="11" bold="false" italic="false" tabWidth="12" />
+    <section>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Times New Roman" background="0xFFFFFF" size="18">The first task when cleaning a kitchen is to </text>
+      <target>remove</target>
+      <text family="Times New Roman" background="0xFFFFFF" size="18"> all items that don't belong in the kitchen, and ensure all kitchen items are in their </text>
+      <target>proper</target>
+      <text family="Times New Roman" background="0xFFFFFF" size="18"> place.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Times New Roman" background="0xFFFFFF" size="18">After cleaning any dirty dishes, fill the sink with hot soapy water and soak the </text>
+      <target>
+       <answer>microwave</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>microwave</text>
+      </target>
+      <text family="Times New Roman" background="0xFFFFFF" size="18"> turntable and the four </text>
+      <target>burner</target>
+      <text family="Times New Roman" background="0xFFFFFF" size="18"> bowls if you have this type of stovetop.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Times New Roman" background="0xFFFFFF" size="18">At the beginning of cleaning your kitchen, </text>
+      <target>spray</target>
+      <text family="Times New Roman" background="0xFFFFFF" size="18"> all surfaces (counters and stovetops) with an all purpose cleaner and let it soakwhile moving on to other </text>
+      <target>tasks</target>
+      <text family="Times New Roman" background="0xFFFFFF" size="18">. This will make it easierto clean surfaces after the cleaner has done its job.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Times New Roman" background="0xFFFFFF" size="18">Begin cleaning the refrigerator by throwing away </text>
+      <target>expired</target>
+      <text family="Times New Roman" background="0xFFFFFF" size="18"> food and working from top to bottom wipe down all inside surfaces with hot soapy water, then wash all outside surfaces in the same way. Shine stainless steel front with a stainless steel cleaner or make you own using </text>
+      <target>water</target>
+      <text family="Times New Roman" background="0xFFFFFF" size="18"> and </text>
+      <target>vinegar</target>
+      <text family="Times New Roman" background="0xFFFFFF" size="18">.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Times New Roman" background="0xFFFFFF" size="18">Use a long-handled duster to clean the tops of cabinets and the light fixtures. To clean the microwave, set a </text>
+      <target>wet</target>
+      <text family="Times New Roman" background="0xFFFFFF" size="18"> sponge inside and run the microwave for two minutes. Let cool before using the sponge to wipe down all surface areas of the microwave, especially the inside top that is often the most soiled </text>
+      <target>surface</target>
+      <text family="Times New Roman" background="0xFFFFFF" size="18">.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Times New Roman" background="0xFFFFFF" size="18">Using a cloth with hot soapy water, wipe down the cabinet fronts and pulls. </text>
+      <target>Wipe</target>
+      <text family="Times New Roman" background="0xFFFFFF" size="18"> down wall areas, paying special attention to walls next to the stovetop that are likely to have been splattered by </text>
+      <target>grease</target>
+      <text family="Times New Roman" background="0xFFFFFF" size="18">.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Times New Roman" background="0xFFFFFF" size="18">Use your self-cleaning oven option to turn oven grease and grim into ash that is easily wiped up after the oven cools. The cleaning cycle usually takes 3 hours. Only use this option when you are home for safety reasons. Clean oven </text>
+      <target>racks</target>
+      <text family="Times New Roman" background="0xFFFFFF" size="18"> separately in hot soapy water using an abrasiveagent such as baking soda when necessary.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Times New Roman" background="0xFFFFFF" size="18">Use hot </text>
+      <target>soapy</target>
+      <text family="Times New Roman" background="0xFFFFFF" size="18"> water or a homemade diluted vinegar cleaner to clean the inside and outside of the dishwasher. Any grime build-up may be scrubbed away using </text>
+      <target>baking</target>
+      <text family="Times New Roman" background="0xFFFFFF" size="18"> soda or a store bought abrasive cleaner.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Times New Roman" background="0xFFFFFF" size="18">Clean the sink basin with a mild abrasive cleaner and wipe down the basin, facet and handles with a microfibercloth for extra shine.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Times New Roman" background="0xFFFFFF" size="18">Before you wash the kitchen floor, sweep first, pulling out appliances if necessary. Use a </text>
+      <target>mop</target>
+      <text family="Times New Roman" background="0xFFFFFF" size="18"> and bucket with hot soapy water and start at the farthest corner from the entrance to the</text>
+      <text family="Arial" background="0xFFFFFF" size="20"> room. Empty dirty bucket water outside or in the </text>
+      <target>toilet</target>
+      <text family="Arial" background="0xFFFFFF" size="20">.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="20">Remove everything from under the kitchen sink and wipe down all surface area with a damp cloth. Take out the kitchen </text>
+      <target>trash</target>
+      <text family="Arial" background="0xFFFFFF" size="20"> and wipe out the trash can using a damp cloth or damp paper towel. Use a </text>
+      <target>diluted</target>
+      <text family="Arial" background="0xFFFFFF" size="20"> vinegar solution on the cloth if there is odor in the can.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">vinegar solution on the cloth if there is odor in the can.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="WHMIS Fill in blanks" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Please pick the right answer</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <counters time="false" actions="false" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="false">
+     <position x="300" y="0" />
+     <size width="600" height="999" />
+    </window>
+    <eventSounds enabled="false">
+     <sound id="start" enabled="false" file="bensound-straight.mp3" />
+    </eventSounds>
+    <skin file="@blue.xml" />
+   </settings>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" size="11" bold="false" italic="false" tabWidth="12" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Times New Roman" background="0xFFFFFF" size="18">Safety Data Sheets (SDSs) are summary </text>
+      <target>
+       <answer>documents</answer>
+       <optionList>
+        <option>labels</option>
+        <option>documents</option>
+        <option>folders</option>
+       </optionList>
+       <text>documents</text>
+      </target>
+      <text family="Times New Roman" background="0xFFFFFF" size="18"> that provide information about the hazards of a product and advice about </text>
+      <target>
+       <answer>safety</answer>
+       <optionList>
+        <option>safety</option>
+        <option>cooking</option>
+        <option>working</option>
+       </optionList>
+       <text>safety</text>
+      </target>
+      <text family="Times New Roman" background="0xFFFFFF" size="18"> precautions.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Times New Roman" background="0xFFFFFF" size="18">Yes. </text>
+      <target>
+       <answer>Employers</answer>
+       <optionList>
+        <option>Employees</option>
+        <option>Coworkers</option>
+        <option>Employers</option>
+       </optionList>
+       <text>Employers</text>
+      </target>
+      <text family="Times New Roman" background="0xFFFFFF" size="18"> will be required to make sure that all hazardous </text>
+      <target>
+       <answer>products</answer>
+       <optionList>
+        <option>products</option>
+        <option>MSDS</option>
+        <option>Books</option>
+       </optionList>
+       <text>products</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Times New Roman" background="0xFFFFFF" size="18">Always be familiar with the </text>
+      <target>
+       <answer>hazards</answer>
+       <optionList>
+        <option>hazards</option>
+        <option>rules</option>
+        <option>size</option>
+       </optionList>
+       <text>hazards</text>
+      </target>
+      <text family="Times New Roman" background="0xFFFFFF" size="18"> of a product before you start </text>
+      <target>
+       <answer>using</answer>
+       <optionList>
+        <option>own</option>
+        <option>using</option>
+        <option>ignore</option>
+       </optionList>
+       <text>using</text>
+      </target>
+      <text family="Times New Roman" background="0xFFFFFF" size="18"> it. </text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@panels.Explore" name="WHMIS Symbols" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Learn about WHMIS Symbols</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFFFFFF">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="false">
+     <position x="300" y="0" />
+    </window>
+    <eventSounds enabled="false">
+     <sound id="start" enabled="false" file="bensound-straight.mp3" />
+    </eventSounds>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="2" cols="4" cellWidth="100.0" cellHeight="31.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell id="0">
+     <p>Biohazards</p>
+    </cell>
+    <cell id="1">
+     <p>Corrosion</p>
+    </cell>
+    <cell id="2">
+     <p>Exclamation</p>
+     <p>Mark</p>
+    </cell>
+    <cell id="3">
+     <p>Flame</p>
+    </cell>
+    <cell id="4">
+     <p>Flame over</p>
+     <p>circle</p>
+    </cell>
+    <cell id="5">
+     <p>Gas Cylinder</p>
+    </cell>
+    <cell id="6">
+     <p>Health Hazard</p>
+    </cell>
+    <cell id="7">
+     <p>Skull and</p>
+     <p>Crossbones</p>
+    </cell>
+   </cells>
+   <cells rows="8" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="8" />
+    <cell image="biohazardous_infectious_materials.gif" />
+    <cell image="corrosion.gif" />
+    <cell image="exclamation_mark.gif" />
+    <cell image="flame.gif" />
+    <cell image="flame_over_circle.gif" />
+    <cell image="gas_cylinder.gif" />
+    <cell image="health_hazard.gif" />
+    <cell image="skull_and_crossbones.gif" />
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="WHMIS Word Search" code="">
+   <description />
+   <messages>
+    <cell txtAlign="left,top" type="initial">
+     <style />
+     <media type="UNKNOWN" level="1" />
+     <p>Biohazardous   Caution Gas Product Acid  Danger  Waring WHMIS</p>
+     <p>Symbols Reactive Toxic Corrosive</p>
+    </cell>
+   </messages>
+   <settings margin="13" useOrder="true" dragCells="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFFFFFF">
+     <counters time="false" actions="false" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="false">
+     <position x="300" y="0" />
+    </window>
+    <eventSounds enabled="false">
+     <sound id="start" enabled="false" file="bensound-straight.mp3" />
+    </eventSounds>
+    <skin file="@blue.xml" />
+   </settings>
+   <textGrid rows="11" columns="12" cellWidth="24.0" cellHeight="20.0" border="true">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Times New Roman" size="48" />
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>ABCCAUTIONB</row>
+     <row>DEFKFZSGASI</row>
+     <row>GHIDRDOGSMO</row>
+     <row>PRODUCTMASH</row>
+     <row>JKACIDCCYDA</row>
+     <row>QWDANGERMSZ</row>
+     <row>WARINGHKLIA</row>
+     <row>WHMISCNDEPR</row>
+     <row>QSYMBOLSBDD</row>
+     <row>WREACTIVEHO</row>
+     <row>EUIOTOXICKU</row>
+     <row>CORROSIVETS</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">ACID</clue>
+    <clue id="1">BIOHAZARDOUS</clue>
+    <clue id="2">CAUTION</clue>
+    <clue id="3">CORROSIVE</clue>
+    <clue id="4">DANGER</clue>
+    <clue id="5">GAS</clue>
+    <clue id="6">MSDS</clue>
+    <clue id="7">PRODUCT</clue>
+    <clue id="8">REACTIVE</clue>
+    <clue id="9">SYMBOLS</clue>
+    <clue id="10">TOXIC</clue>
+    <clue id="11">WARNING</clue>
+    <clue id="12">WHMIS</clue>
+   </clues>
+   <cells rows="5" cols="4" cellWidth="50.0" cellHeight="30.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="5" />
+   </cells>
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.Complete" name="Welcome" code="">
+   <description />
+   <messages>
+    <cell border="true" type="initial">
+     <style />
+     <p>Please click the right arrow to continue</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="false">
+     <position x="300" y="0" />
+    </window>
+    <eventSounds enabled="false" />
+    <skin file="@blue.xml" />
+   </settings>
+   <checkButton />
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" size="11" bold="false" italic="false" tabWidth="12" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16">CONTENTS</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16">WHMIS Word Search</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16">WHMIS Fill in blanks</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16">WHMIS Symbols</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16">Canadian Food of Guide Quiz</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16">Cooking Terms</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16">Driving and Safety</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16">Efficient Cleaning - the Bathroom</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16">Efficient Cleaning - The Kitchen</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16">When to do Household Chores</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16">Wash Care Symbols</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="Wash Care Symbols" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Wash Care Symbols Pick True or False</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <counters time="false" actions="false" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true">
+     <position x="300" y="0" />
+     <size width="900" height="999" />
+    </window>
+    <eventSounds enabled="false" />
+    <skin file="@blue.xml" />
+   </settings>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" size="11" bold="false" italic="false" tabWidth="12" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16">Wash care symbols are special instructions to help you care for your clothing. </text>
+      <target>
+       <answer>True</answer>
+       <optionList>
+        <option> True</option>
+        <option>False</option>
+       </optionList>
+       <text>True</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16" bold="false" italic="false">A machine wash symbol with one dot means the garment should be washed in hot water.  </text>
+      <target>
+       <answer>False</answer>
+       <optionList>
+        <option>True</option>
+        <option>False</option>
+       </optionList>
+       <text>True</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16" bold="false" italic="false">An X over the machine wash symbol means the garment should be dry cleaned. </text>
+      <target>
+       <answer>True</answer>
+       <optionList>
+        <option>True</option>
+        <option>False</option>
+       </optionList>
+       <text>True</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16" bold="false" italic="false">The square symbol represents whether or not you can use bleach on the fabric. </text>
+      <target>
+       <answer>False</answer>
+       <optionList>
+        <option>True</option>
+        <option>False</option>
+       </optionList>
+       <text>True</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16" bold="false" italic="false">The tumble dry symbol is a square with a circle inside. </text>
+      <target>
+       <answer>True</answer>
+       <optionList>
+        <option>True</option>
+        <option>False</option>
+       </optionList>
+       <text>True</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16" bold="false" italic="false">Three dots on the dryer symbol means you can use high temperature to dry the fabric. </text>
+      <target>
+       <answer>True</answer>
+       <optionList>
+        <option>True</option>
+        <option>False</option>
+       </optionList>
+       <text>True</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16" bold="false" italic="false">The dry clean symbol is represented by a circle. </text>
+      <target>
+       <answer>True</answer>
+       <optionList>
+        <option>True</option>
+        <option>False</option>
+       </optionList>
+       <text>True</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16" bold="false" italic="false">An X over the bleach symbol means to cautiously use chlorine bleach. </text>
+      <target>
+       <answer>False</answer>
+       <optionList>
+        <option>True</option>
+        <option>False</option>
+       </optionList>
+       <text>True</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16" bold="false" italic="false">One dot on the tumble dry symbol means to use low temperature to dry the fabric. </text>
+      <target>
+       <answer>True</answer>
+       <optionList>
+        <option>True</option>
+        <option>False</option>
+       </optionList>
+       <text>True</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16" bold="false" italic="false">Without a wash care symbol attached to a garment, refer to care based on type of fabric. </text>
+      <target>
+       <answer>True</answer>
+       <optionList>
+        <option>True</option>
+        <option>False</option>
+       </optionList>
+       <text>True</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">               </text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="When to do Household Chores" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Please pick the right answer</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <counters time="false" actions="false" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true">
+     <position x="300" y="0" />
+     <size width="600" height="999" />
+    </window>
+    <eventSounds enabled="false" />
+    <skin file="@blue.xml" />
+   </settings>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" size="11" bold="false" italic="false" tabWidth="12" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16" bold="true">Please pick the right answer</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16">How often should you make the bed? </text>
+      <target>Daily</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16">How often should you wash dishes? </text>
+      <target>Daily</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16">How often should you put your clothes and shoes away? </text>
+      <target>Daily</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16">How often should you deal with all incoming mail? </text>
+      <target>Daily</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16">How often should you wipe down kitchen and bathroom counters? </text>
+      <target>Daily</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16">How often should you wash your bedding? </text>
+      <target>Daily</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16">How often should you vacuum/mop/sweep all floors? </text>
+      <target>Daily</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16">How often should you wash, dry and put away laundry, including all towels? </text>
+      <target>Daily</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16">How often should you wipe down stove top and oven door? </text>
+      <target>Daily</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16">How often do you clean the shower and toilet? </text>
+      <target>Daily</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16">How often do you take out the trash? </text>
+      <target>Daily</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16">How often should you dust all surfaces? </text>
+      <target>Daily</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16">How often should you wipe down or vacuum baseboards? </text>
+      <target>Daily</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16">How often should you clean out the refrigerator? </text>
+      <target>Daily</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <target>                  </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="biohazardous_infectious_materials.gif" file="biohazardous_infectious_materials.gif" animated="false" />
+  <media name="corrosion.gif" file="corrosion.gif" animated="false" />
+  <media name="exclamation_mark.gif" file="exclamation_mark.gif" animated="false" />
+  <media name="flame.gif" file="flame.gif" animated="false" />
+  <media name="flame_over_circle.gif" file="flame_over_circle.gif" animated="false" />
+  <media name="gas_cylinder.gif" file="gas_cylinder.gif" animated="false" />
+  <media name="health_hazard.gif" file="health_hazard.gif" animated="false" />
+  <media name="skull_and_crossbones.gif" file="skull_and_crossbones.gif" animated="false" />
+  <media name="bensound-straight.mp3" file="bensound-straight.mp3" />
+ </mediaBag>
+</JClicProject>
+

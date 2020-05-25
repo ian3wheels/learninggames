@@ -1,0 +1,40 @@
+{
+  "title": "test",
+  "author": "Tech Department",
+  "school": "Summer Street",
+  "date": "5/15/20",
+  "description": {},
+  "license": {
+    "en": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "en"
+  ],
+  "mainFile": "test.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 10,
+  "mediaFiles": 14,
+  "totalSize": 6250348,
+  "files": [
+    "bensound-straight.mp3",
+    "biohazardous_infectious_materials.gif",
+    "corrosion.gif",
+    "exclamation_mark.gif",
+    "favicon.ico",
+    "flame.gif",
+    "flame_over_circle.gif",
+    "gas_cylinder.gif",
+    "health_hazard.gif",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "skull_and_crossbones.gif",
+    "test.jclic",
+    "test.jclic.js"
+  ]
+}
